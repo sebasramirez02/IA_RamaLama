@@ -1,0 +1,278 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+    padding-bottom: 60px; /* Espacio para el footer fijo */
+}
+
+/* Estilos del header */
+header {
+    background-color: #555;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #1E90FF; /* Azul Dodger */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1E90FF; /* Azul Dodger */
+    transform: scale(1.1);
+    color: #fff;
+}
+
+nav ul li a:active {
+    background-color: #4682B4; /* Azul acero */
+}
+
+/* Sección Hero en la página de inicio */
+.hero {
+    background-color: #555;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #1E90FF; /* Azul Dodger */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 800px;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Botones de llamada a la acción */
+.button-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    background-color: #1E90FF; /* Azul Dodger */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4682B4; /* Azul acero */
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    background-color: #104E8B; /* Azul oscuro */
+}
+
+/* Tarjeta de contacto */
+.contact-card {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    z-index: 2000;
+}
+
+.contact-card h3 {
+    margin-bottom: 15px;
+    color: #1E90FF; /* Azul Dodger */
+}
+
+.contact-card p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.close-button {
+    background-color: #FF6347; /* Rojo tomate */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #FF4500; /* Naranja rojo */
+}
+
+/* Sección Servicios */
+.services {
+    background-color: #e0e0e0;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1E90FF; /* Azul Dodger */
+    text-align: center;
+}
+
+.content-group {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-group h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-group p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Otras secciones */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1E90FF; /* Azul Dodger */
+    text-align: center;
+}
+
+.section .content-group {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section .content-group h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section .content-group p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .contact-card {
+        width: 90%;
+    }
+}
